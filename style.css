@@ -78,18 +78,17 @@ nav {
         background-color: whitesmoke;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    
+
     .info {
         background-color: whitesmoke;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    
 }
 
 .body {
     display: grid;
-    grid-template-columns: 1fr 4fr; /* 1 fraction for .side, 4 fractions for .info */
-    gap: 10px; /* Optional spacing between the two divs */
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
     height: 100vh; /* Full height of the viewport (optional) */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -97,14 +96,21 @@ nav {
 
 .side {
     background-color: whitesmoke;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .info {
+    padding: 20px;
     background-color: whitesmoke;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 /* FOOTER */
 
@@ -122,7 +128,7 @@ nav {
         justify-content: space-around;
         padding: 10px;
         background-color: whitesmoke;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         font-size: 5px;
     }
 
