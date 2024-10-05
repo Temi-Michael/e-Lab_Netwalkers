@@ -26,3 +26,12 @@ underlineElements.forEach((underlineTag, index) => {
         }
     });
 });
+
+
+
+let side = document.getElementById('side');
+let toggle = document.getElementById('toggleButton');
+
+toggle.addEventListener('click', () => {
+  side.classList.toggle('show');
+});
