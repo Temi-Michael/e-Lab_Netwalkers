@@ -28,10 +28,22 @@ underlineElements.forEach((underlineTag, index) => {
 });
 
 
-
 let side = document.getElementById('side');
 let toggle = document.getElementById('toggleButton');
 
 toggle.addEventListener('click', () => {
   side.classList.toggle('show');
 });
+
+// Select all buttons with class 'pgn_btn'
+let buttonSelector = document.querySelectorAll('.pgn_btn');
+
+buttonSelector.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove .pgn_btnChange from all buttons
+    buttonSelector.forEach(btn => btn.classList.remove('pgn_btnChange'));
+    // Add .pgn_btnChange to clicked button
+    button.classList.add('pgn_btnChange');
+  });
+});
+

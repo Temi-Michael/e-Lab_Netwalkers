@@ -151,8 +151,104 @@
             </div>
         </div>
         <div class="info">
-            <h2 class="blank">Blank Page</h2>
-            <p class="blank">Home <i class="fa-solid fa-arrow-right"></i> Page 1 <i class="fa-solid fa-arrow-right"></i><b>Page 2</b></p>
+            <h2 class="blank">Drug Prescription Page</h2>
+            <p class="blank">Home <i class="fa-solid fa-arrow-right"></i> Page 1 <i
+                    class="fa-solid fa-arrow-right"></i><b>Page 2</b></p>
+            <div class="btn_cover">
+                <button class="pgn_btn">Vital Signs</button>
+                <button class="pgn_btn">Presenting Complains</button>
+                <button class="pgn_btn">Diagnosis</button>
+                <button class="pgn_btn">Plan</button>
+                <button class="pgn_btn">Charges</button>
+                <button class="pgn_btn">Payments</button>
+                <button class="pgn_btn">Prescriptions</button>
+                <button class="pgn_btn">Medications</button>
+            </div>
+            <div>
+                <p id="tableHead">Prescribed Drugs</p>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Medicine Name</th>
+                            <th>Strength</th>
+                            <th>Interval/Duration</th>
+                            <th>Instruction</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>Tab Emzor Paracetamol 250mg <br>
+                                <button class="arth">Arthemeter</button>
+                            </td>
+                            <td>250mg</td>
+                            <td>QDS/7 days</td>
+                            <td>1 Morning, one night for 7 days</td>
+                            <td class="rem"><button class="remove">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>Tab Emzor Paracetamol 250mg <br>
+                                <button class="arth">Arthemeter</button>
+                            </td>
+                            <td>250mg</td>
+                            <td>QDS/7 days</td>
+                            <td>1 Morning, one night for 7 days</td>
+                            <td class="rem"><button class="remove">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Tab Emzor Paracetamol 250mg <br>
+                                <button class="arth">Arthemeter</button>
+                            </td>
+                            <td>250mg</td>
+                            <td>QDS/7 days</td>
+                            <td>1 Morning, one night for 7 days</td>
+                            <td class="rem"><button class="remove">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="labels">
+                <div class="label_div">
+                    <label for="med_brand">
+                        Search Medicine Brand
+                    </label>
+                    <input type="text" name="med_brand" class="input" id="med_brand"
+                        placeholder="Search Medicine Brand">
+                </div>
+                <div class="label_div">
+                    <label for="interval">
+                        Interval
+                    </label>
+                    <input type="text" name="interval" class="input" id="interval" placeholder="Enter Interval">
+                </div>
+                <div class="label_div">
+                    <label for="instruction">
+                        Special Instruction
+                    </label>
+                    <input type="text" name="instruction" class="input" id="instruction"
+                        placeholder="Enter Instruction">
+                </div>
+                <div class="label_div">
+                    <label for="duration">
+                        Duration
+                    </label>
+                    <input type="text" name="duration" class="input" id="duration" placeholder="Enter Duration">
+                </div>
+                <div class="add_cover"><button class="add" style="border-radius: 5px;padding: 7px;">Add</button></div>
+            </div>
+            <div class="search">
+                <ul>
+                    <li>Emzor Paracetamol Tab 250mg <br> <span>(10 sachet left)</span></li>
+                    <li class="list">Paracetamol <br> <span>(5 bottles left)</span></li>
+                </ul>
+            </div>
+            <button class="next">Next<i class="fa-solid fa-circle-right fa-2x"></i></button>
         </div>
     </main>
     <!-- FOOTER -->
