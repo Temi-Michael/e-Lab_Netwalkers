@@ -166,7 +166,7 @@ nav {
     gap: 10px;
     height: 100vh;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .side {
@@ -261,91 +261,84 @@ nav {
 }
 
 .labels {
+    align-content: space-evenly;
     display: flex;
     padding: 107px 0 0 0;
 }
-
 
 .label_div label {
     font-size: 12px;
     font-weight: 900;
 }
 
-.search {
-    display: block;
-    width: 320px;
-    height: 107px;
-    background-color: white;
-    position: relative;
-    margin: 0 0 0 10px;
-}
-
-.search ul {
-    position: inherit;
-    margin: 0;
-    font-size: 12px;
-    font-weight: 400;
-    color: #5B5B5B;
-    padding: 0;
-    margin: 0px 0 0 10px;
-}
-
-.search ul .list {
-    margin-top: 10px;
-}
-
-.search ul li span {
-    color:#8F8989
-}
-
-input {
-    display: block;
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
     border: none;
-    border-radius: 5px;
+    background-color: white;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.label_div input {
+    padding-left: 15px;
+    width: 90%;
+}
+
+option {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
 }
 
 #med_brand {
-    width: 301px;
     height: 33px;
-    padding-left: 23px;
 }
 
-#interval {
-    width: 243px;
+#med_name {
     height: 33px;
-    padding-left: 5px;
+}
+
+#dose,
+#interval,
+#duration {
+    height: 33px;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 #instruction {
-    width: 272px;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     height: 33px;
-    padding-left: 11px;
-}
-
-#duration{
-    width: 105px;
-    height: 33px;
-    padding-left: 8px;
-}
-
-.add_cover {
-    display: flex;
-    align-items: end;
 }
 
 .add {
     background-color: #9C3030;
     color: white;
-    width: 48px;
+    width: 60px;
     height: 28px;
-    font-size: 10px;
-    font-weight: 900;
+    font-size: 15px;
+    font-weight: 500;
     border: none;
+    border-radius: 5px;
 }
 
-.remove {
+.deleteRow {
     background-color: #A12B2B;
     border-color: #9C3030;
     color: white;
@@ -368,16 +361,19 @@ table {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-th,
+th{
+    border: 3px solid #E5E5E5;
+    padding: 10px;
+    color: #5B5B5B;
+    background-color: #ece9e9;
+    text-align: left;
+}
+
 td {
     border: 3px solid #E5E5E5;
     padding: 10px;
     color: #5B5B5B;
-}
-
-th {
-    background-color: #ece9e9;
-    text-align: left;
+    text-transform: uppercase;
 }
 
 .arth {
@@ -389,28 +385,6 @@ th {
     border: none;
     font-size: 10px;
     font-weight: 900;
-}
-
-.next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 900;
-    width: 105px;
-    height: 42px;
-    margin: 22px 0 0 2px;
-    gap: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #A12B2B;
-    color: white;
-}
-
-.fa-circle-right {
-    color: white;
-    display: flex;
-    align-items: center;
 }
 
 /* FOOTER */

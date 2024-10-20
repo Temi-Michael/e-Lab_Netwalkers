@@ -179,37 +179,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td class="num">1</td>
-                            <td>Tab Emzor Paracetamol 250mg <br>
-                                <button class="arth">Arthemeter</button>
-                            </td>
-                            <td>250mg</td>
-                            <td>QDS/7 days</td>
-                            <td>1 Morning, one night for 7 days</td>
-                            <td class="rem"><button class="remove">Remove</button></td>
-                        </tr>
-                        <tr>
-                            <td class="num">2</td>
-                            <td>Tab Emzor Paracetamol 250mg <br>
-                                <button class="arth">Arthemeter</button>
-                            </td>
-                            <td>250mg</td>
-                            <td>QDS/7 days</td>
-                            <td>1 Morning, one night for 7 days</td>
-                            <td class="rem"><button class="remove">Remove</button></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Tab Emzor Paracetamol 250mg <br>
-                                <button class="arth">Arthemeter</button>
-                            </td>
-                            <td>250mg</td>
-                            <td>QDS/7 days</td>
-                            <td>1 Morning, one night for 7 days</td>
-                            <td class="rem"><button class="remove">Remove</button></td>
-                        </tr>
+                    <tbody id="tableBody">
                     </tbody>
                 </table>
             </div>
@@ -218,37 +188,44 @@
                     <label for="med_brand">
                         Search Medicine Brand
                     </label>
-                    <input type="text" name="med_brand" class="input" id="med_brand"
-                        placeholder="Search Medicine Brand">
+                    <select name="med_brand" id="med_brand">
+                        <option value="">Search Medicine Brand</option>
+                    </select>
+                </div>
+                <div class="label_div">
+                    <label for="med_name">
+                        Search Medicine Name
+                    </label>
+                    <select name="med_name" id="med_name">
+                        <option value="">Search Medicine Name</option>
+                    </select>
+                </div>
+                <div class="label_div">
+                    <label for="dose">
+                        Dose
+                    </label>
+                    <input id="dose" placeholder="Strength" />
                 </div>
                 <div class="label_div">
                     <label for="interval">
                         Interval
                     </label>
-                    <input type="text" name="interval" class="input" id="interval" placeholder="Enter Interval">
-                </div>
-                <div class="label_div">
-                    <label for="instruction">
-                        Special Instruction
-                    </label>
-                    <input type="text" name="instruction" class="input" id="instruction"
-                        placeholder="Enter Instruction">
+                    <input type="text" name="interval" id="interval" placeholder="Interval">
                 </div>
                 <div class="label_div">
                     <label for="duration">
                         Duration
                     </label>
-                    <input type="text" name="duration" class="input" id="duration" placeholder="Enter Duration">
+                    <input type="text" name="duration" id="duration" placeholder="Interval">
                 </div>
-                <div class="add_cover"><button class="add" style="border-radius: 5px;padding: 7px;">Add</button></div>
+                <div class="label_div">
+                    <label for="instruction">
+                        Special Instruction
+                    </label>
+                    <input type="text" name="instruction" id="instruction" placeholder="Nil">
+                </div>
             </div>
-            <div class="search">
-                <ul>
-                    <li>Emzor Paracetamol Tab 250mg <br> <span>(10 sachet left)</span></li>
-                    <li class="list">Paracetamol <br> <span>(5 bottles left)</span></li>
-                </ul>
-            </div>
-            <button class="next">Next<i class="fa-solid fa-circle-right fa-2x"></i></button>
+            <button class="add" id="add">Add</button>
         </div>
     </main>
     <!-- FOOTER -->
